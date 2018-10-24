@@ -26,7 +26,7 @@ class App extends Component {
               <div className="container">
                   <Route path="/" exact={true} component = {Home}/>
                   <SecureRoute path="/Project" exact={true} component = {Project}/>
-                  <Route path='/login' render={() => <Login baseUrl='https://lk-project-portfolio.herokuapp.com/login' />} />
+                  <Route path='/login' render={() => <Login baseUrl='https://lk-project-portfolio.herokuapp.com' />} />
                   <Route path='/implicit/callback' component={ImplicitCallback} />
               </div>
               
